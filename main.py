@@ -43,6 +43,6 @@ class MainPage(webapp2.RequestHandler):
         self.write_form(user_text)
 
         self.redirect("/")
-app = webapp2.WSGIApplication([('/unit2/rot13', MainPage)],
+app = webapp2.WSGIApplication([('/', MainPage)],
                                 debug=True)   
         
