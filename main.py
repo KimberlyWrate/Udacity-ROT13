@@ -42,7 +42,7 @@ class MainPage(webapp2.RequestHandler):
 
         self.write_form(user_text)
 
-        self.redirect("/")
+        #self.redirect("/")
 app = webapp2.WSGIApplication([('/', MainPage)],
                                 debug=True)   
         
